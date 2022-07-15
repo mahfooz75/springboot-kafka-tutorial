@@ -31,3 +31,5 @@ build/
 
 ### VS Code ###
 .vscode/
+/src/main/resources/docker/zk-single-kafka-multiple/
+/.mvn/

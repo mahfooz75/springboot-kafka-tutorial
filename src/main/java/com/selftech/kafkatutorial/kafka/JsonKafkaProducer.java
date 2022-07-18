@@ -23,7 +23,7 @@ public class JsonKafkaProducer {
         log.info(String.format("Message sent -> %s", data.toString()));
         Message<User> message = MessageBuilder
                 .withPayload(data)
-                .setHeader(KafkaHeaders.TOPIC, KafkaConstant.JAVA_GUIDE_TOPIC)
+                .setHeader(KafkaHeaders.TOPIC, KafkaConstant.JAVA_GUIDE_JSON_TOPIC)
                 .build();
         kafkaTemplate.send(message);
     }

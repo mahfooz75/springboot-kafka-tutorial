@@ -17,4 +17,12 @@ public class KafkaTopicConfig {
                 .build();
     }
 
+    @Bean
+    public NewTopic createJsonTopic() {
+        return TopicBuilder.name(KafkaConstant.JAVA_GUIDE_JSON_TOPIC)
+                .partitions(3)
+                .replicas(3)
+                .build();
+    }
+
 }

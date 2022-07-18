@@ -6,4 +6,5 @@ public class KafkaConstant {
 
     public static final String JAVA_GUIDE_TOPIC = "javaguides";
     public static final String JAVA_GUIDE_JSON_TOPIC = "javaguides_json";
+    public static final String GROUP_ID = "myGroup";
 }
